@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta keywords="Hotel,marsella,risarlada,carmen,alojamiento" />
+        <meta description="Hotel carmen marsella risaralda" />
+        
+        <link rel=stylesheet href="css/normalize.css" type="text/css"/>
+        <link rel=stylesheet href="css/estilos.css" type="text/css"/>
+        <link type="text/css" rel="stylesheet" href="js/galleria/themes/classic/galleria.classic.css">
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script type="text/javascript" src="js/galleria/galleria-1.2.9.min.js"></script>
+        <script type="text/javascript" src="js/galleria/themes/classic/galleria.classic.min.js"></script>
+        <script type="text/javascript">
+            $(document).on("ready",init);
+            function init()
+            {
+                galeria();
+            }
+            function galeria()
+            {
+                $('#galleria').galleria({
+                    
+
+                });
+            }    
+        </script>
+    </head>
+    <body>
+        <div id="principal">
+            <header>
+                <hgroup>
+                    <h1>Hotel Carmen Marsella</h1>  
+                    <h2>Su casa en Marsella</h2>
+                </hgroup>
+                
+            </header>
+            <nav>
+                    <ul>
+                        <li><a href="index.html">Hotel</a></li>
+                        <li><a href="fotos.html">Fotos</a></li>
+                        <!--
+                        <li><a href="habitaciones.html">Habitaciones</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="opiniones.html">Opiniones</a></li>
+                        <li><a href="lugares.html">Lugares</a></li>
+                        <li><a href="mapa.html">Mapa</a></li>
+                        <li><a href="sitios.html">Sitios de interes</a></li> -->   
+                        <li><a href="contactenos.html">Contactenos</a></li> 
+                    </ul>
+            </nav>
+            <section id="fotos">  
+                <div id="galleria">
+                    <img src="fotos/fachada.JPG">
+                    <img src="fotos/salacomedor.JPG">
+                    <img src="fotos/barra.JPG">
+                    <img src="fotos/matrimonial.JPG">
+                    <img src="fotos/habitacion9.JPG">
+                    <img src="fotos/baño.JPG">
+                    <img src="fotos/doble.JPG">
+                    <img src="fotos/dobles.JPG">
+                    <img src="fotos/comedor.JPG">
+                    <img src="fotos/dobles2.JPG">
+                </div>
+            </section>
+            <footer>
+                <h6>
+                    <div class="vcard">
+                        <div>
+                            <span class="name">Hotel Carmen</span>
+                            <span class="locality">Marsella</span>
+                            <span class="region">Risaralda</span>
+                            <span class="contry-name">Colombia</span>
+                            <span class="dir">Carrera 10 Nro 16-30 Al lado de la estación de policía</span>
+
+                        </div>
+                        <div>
+                            <span class="tel">3216429907 - 3128145497</span>
+                            <span class="email">hotelcarmen-marsella@hotmail.com</span> 
+                        </div>  
+                    </div>
+                </h6>   
+            </footer>
+        </div>
+    </body>
+</html>

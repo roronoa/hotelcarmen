@@ -1,0 +1,217 @@
+/**Fuentes personalizadas*/
+@font-face{
+	font-family: UbuntuRegular;
+	src: url(fuentes/Ubuntu-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family: UbuntuBold;
+	src: url(fuentes/Ubuntu-Bold.ttf) format('truetype');
+}
+@font-face{
+	font-family: UbuntuBoldItalic;
+	src: url(fuentes/Ubuntu-BoldItalic.ttf) format('truetype');
+}
+@font-face{
+	font-family: UbuntuItalic;
+	src: url(fuentes/Ubuntu-italic.ttf) format('truetype');
+}
+
+/* Estilos Básicos*/
+
+body{
+	background: darkgray;
+	color: #EEE;
+	font-family: UbuntuRegular;
+	font-size: 16px;
+	text-align: center;
+}
+
+footer{
+	background: darkgray;
+	border: 2px solid white;
+	border-radius: 0px 0px 5px 35px;
+	-moz-border-radius: 0px 0px 5px 35px;
+	-webkit-border-radius: 0px 0px 5px 35px;
+	-o-border-radius: 0px 0px 5px 35px;
+
+	box-shadow: 0px 0px 10px white;
+	-moz-box-shadow: 0px 0px 10px white;
+	-webkit-box-shadow: 0px 0px 10px white;
+	-o-box-shadow: 0px 0px 10px white;
+
+	display: table;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: UbuntuBold;
+}
+
+header{
+	background: url('../img/logo.jpg') no-repeat 1% center, darkgrey;
+	background-size: 130px,100px,100px;		
+	border: 2px solid white;
+	border-radius: 0 35px 0 0;
+	-moz-border-radius: 0 35px 0 0;
+	-o-border-radius: 0 35px 0 0;
+	-webkit-box-shadow: 0px 0px 0px 10px white;	
+	box-shadow: 0px 0px 10px white;
+	-moz-box-shadow: 0px 0px 10px white;
+	-webkit-box-shadow: 0px 0px 10px white;
+	-o-box-shadow: 0px 0px 10px white;
+	margin: 0 0 1em 0; /*U > D <*/
+	padding: 0.5em 0;
+	width: 100%;
+}
+
+header h1
+{
+	margin: 0;
+	text-shadow: rgba(255,255,255,0.5) 5px 5px 10px;
+}
+
+header h2
+{
+	margin: 0;
+	font-weight: normal;
+	text-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+}
+
+nav{
+	margin: 0 0 1em 0; /*U > D <*/
+	text-align: center; 
+}
+
+nav ul{
+	background-color: darkgray;
+	color: white;
+	display: inline;
+	font-family: UbuntuRegular;
+	font-size: 16px;
+	margin-left: 0px;
+	padding-left: 0px;
+	position: relative;
+	width: 100%;
+}
+
+nav ul li{
+	display: inline;
+	text-align: center;
+}
+
+nav ul li a{	
+	background: gray;
+	border: 1px solid white;
+	border-radius: 0px 10px 0px 10px;
+	-moz-border-radius: 0px 10px 0px 10px;
+	-webkit-border-radius: 0px 10px 0px 10px;
+	-o-border-radius: 0px 10px 0px 10px;
+	box-shadow: 0px 0px 5px white;
+	-moz-box-shadow: 0px 0px 5px white;
+	-webkit-box-shadow: 0px 0px 5px white;
+	-o-box-shadow: 0px 0px 5px white;
+	color:white;
+	margin: 10px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	background: white;
+	color: black;
+	box-shadow: 0px 0px 25 white;
+}
+
+section{
+	background: darkgray;
+	border: 2px solid white;
+	box-shadow: 0 0 25px white;
+	-moz-box-shadow: 0 0 25px white;
+	-webkit-box-shadow: 0 0 25px white;
+	-o-box-shadow: 0 0 25px white;
+	padding: 1em 0 1em 0;
+	margin: 0 0 0.5em 0;
+	width: 100%;
+} 
+
+#banner{
+	background: rgba(0,0,0,0.1);
+	background: url('../img/banner1.jpg')  no-repeat center fixed;
+	background-size: cover;
+	border: 2px solid white;
+	box-shadow: 0px 0px 25px white;
+	-moz-box-shadow: inset 0px 0px 25px white;
+	-webkit-box-shadow: inset 0px 0px 25px white;
+	-o-box-shadow: inset 0px 0px 25px white;
+	animation: rotar 15s;
+	-moz-animation: rotar 15s;
+	-webkit-animation: rotar 15s;
+	animation-iteration-count:infinite;
+	-moz-animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;
+	height: 300px;
+	margin: 0 0 5px 0;
+	text-align: left;
+	width: 100%;
+}
+@-moz-keyframes rotar{
+	30%{background:url('../img/banner2.jpg')  center;}
+	70%{background:url('../img/banner3.jpg') no-repeat center;}
+	100%{background:url('../img/banner1.jpg') no-repeat center;}
+	/*100%{background:grey;backgroun-size 1600px 800px;}*/
+}
+@-webkit-keyframes rotar{
+	30%{background:url('../img/banner2.jpg') no-repeat center;}
+	70%{background:url('../img/banner3.jpg') no-repeat center;}
+	100%{background:url('../img/banner1.jpg') no-repeat center;}
+	/*100%{background:grey;backgroun-size 1600px 800px;}*/
+}
+#banner_sec{
+	background: rgba(0,0,0,0.1);
+	background: url('../img/banner_1.png')  no-repeat center fixed;
+	background-size: cover;
+	border: 2px solid white;
+	height: 200px;
+	margin: 0 0 5px 0;
+	text-align: left;
+	width: 100%;
+}
+
+#galleria{
+	border-radius: 2em 2em 2em 2em;
+	height: 500px;
+	margin: 0 1em 0 1em; 
+}
+
+#principal{
+	background: darkgray;
+	text-align: center;
+	margin: auto;
+	height: 100%;
+	width: 80%;
+
+}
+
+.sobrehotel{
+	background: darkgray;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-o-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	box-shadow: rgba(0,0,0,0.5) 5px 10px 20px;
+	-moz-box-shadow: rgba(0,0,0,0.5) 5px 10px 20px;
+	-o-box-shadow: rgba(0,0,0,0.5) 5px 10px 20px;
+	-webkit-box-shadow: rgba(0,0,0,0.5) 5px 10px 20px;
+	display: inline-block;
+	height: 300px;
+	margin: 0 2px 5px 0;
+	padding: 0.5em;
+	text-align: left;
+	width: 30%;
+	vertical-align: top;
+}
+.sobrehotel img{
+	border: 4px solid white;
+}
